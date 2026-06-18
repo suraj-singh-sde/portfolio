@@ -94,7 +94,7 @@
         <div class="hero-actions">
           <a class="btn-glow" href="mailto:suraj.singh.nsut@gmail.com?subject=Hello%20Suraj">Get in touch</a>
           <div class="hero-actions-row">
-            <a class="btn-line" href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a class="btn-line" href="https://drive.google.com/file/d/1JRgZnU73DzQ3tkhqUUYEzXw6elEBHwod/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
             <div class="hero-social" role="group" aria-label="Profiles">
               <a class="btn-icon" href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
                 <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
@@ -148,8 +148,16 @@
 
     <section class="experience-section" aria-labelledby="exp-heading edu-heading pub-heading">
       <div class="resume-carousel-block">
-        <div class="exp-section-head exp-section-head--title-only">
+        <div class="exp-section-head">
           <h2 class="s-heading exp-heading" id="exp-heading">Experience</h2>
+          <div class="exp-carousel-nav" role="group" aria-label="Experience navigation">
+            <button type="button" class="exp-arrow exp-arrow--prev" aria-label="Previous experience" aria-controls="expCarousel">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button type="button" class="exp-arrow exp-arrow--next" aria-label="Next experience" aria-controls="expCarousel">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+          </div>
         </div>
         <div class="exp-carousel-shell">
           <div class="exp-carousel" id="expCarousel" tabindex="0" aria-roledescription="carousel" aria-label="Work experience">
@@ -167,6 +175,8 @@
                 <li>Architected an AI-native no-code platform using LLM-powered agents and tool orchestration to generate production-ready, multi-page web applications from natural language and Figma designs.</li>
                 <li>Built a multi-agent Text-to-Application pipeline: LLM reasoning, schema validation, vector databases, and automated UI orchestration for intent parsing, layout synthesis, component mapping, and workflow generation.</li>
                 <li>Engineered Figma-to-application conversion with Figma APIs, parsing engines, and abstraction layers — unstructured design data → structured app definitions for design-to-deployment automation.</li>
+                <li>Engineered an AI-powered image authenticity detection pipeline to distinguish real from AI-generated images using Fast Fourier Transform (FFT) analysis for frequency-spectrum extraction — surfacing synthetic artifacts and frequency-domain inconsistencies. Layered LLM-based reasoning over spectral patterns for forensic analysis and explainable classification outputs.</li>
+                <li>Building a passport-to-face verification system to validate whether a passport photo and live face match — leveraging AdaFace IR-101 for face embeddings and Buffalo_L (InsightFace) for face detection.</li>
               </ul>
             </div>
           </article>
@@ -252,7 +262,7 @@
               <div class="exp-head">
                 <div>
                   <div class="exp-co">Netaji Subhas University of Technology</div>
-                  <div class="exp-role">B.Tech Mechanical Engineering</div>
+                  <div class="exp-role">Bachelor of Technology</div>
                 </div>
                 <div class="exp-when">Sep 2020 – May 2024</div>
               </div>
@@ -350,11 +360,21 @@
 
     <section class="reco-section" id="recommendations" aria-labelledby="reco-heading">
       <div class="reco-inner">
-        <div class="reco-head">
-          <h2 class="s-heading exp-heading" id="reco-heading">Recommendations</h2>
-        </div>
-        <div class="reco-grid">
-          <article class="reco-card">
+        <div class="resume-carousel-block reco-carousel-block">
+          <div class="exp-section-head reco-head">
+            <h2 class="s-heading exp-heading" id="reco-heading">Recommendations</h2>
+            <div class="exp-carousel-nav" role="group" aria-label="Recommendations navigation">
+              <button type="button" class="exp-arrow exp-arrow--prev" aria-label="Previous recommendation" aria-controls="recoCarousel">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+              </button>
+              <button type="button" class="exp-arrow exp-arrow--next" aria-label="Next recommendation" aria-controls="recoCarousel">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="exp-carousel-shell">
+            <div class="exp-carousel reco-carousel" id="recoCarousel" tabindex="0" aria-roledescription="carousel" aria-label="Recommendations">
+              <article class="reco-card">
             <div class="reco-quote-mark" aria-hidden="true">“</div>
             <blockquote class="reco-quote">I had the pleasure of managing Suraj, who consistently delivered strong contributions across both backend development and data science. He developed robust backend APIs, improved system performance, and leveraged data-driven insights through solid analytical and modeling capabilities. Suraj is a fast learner, demonstrates initiative in tackling complex challenges, and reliably produces high-quality work. He is dependable, collaborative, and a valuable asset to any engineering or data-oriented team.</blockquote>
             <footer class="reco-author">
@@ -384,6 +404,8 @@
               </div>
             </footer>
           </article>
+            </div>
+          </div>
         </div>
       </div>
     </section>
