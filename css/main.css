@@ -823,7 +823,8 @@ a.btn-line{display:inline-flex;align-items:center;justify-content:center;text-de
   padding-top:2.5rem;
   border-top:0.5px solid var(--bd);
 }
-.pub-resume-block .pub-banner{margin-top:1.5rem;}
+.pub-resume-block .pub-banner{margin-top:14px;}
+.pub-resume-block .exp-section-head + .pub-banner{margin-top:1.5rem;}
 .pub-banner{
   padding:1.25rem 1.35rem;border-radius:16px;
   border:0.5px solid var(--bd2);
