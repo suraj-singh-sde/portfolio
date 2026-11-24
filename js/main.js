@@ -106,7 +106,6 @@ const HERO_ROTATE_PHRASES = [
   'Backend Dev.',
   'Researcher.',
   'Traveller.',
-  'Photographer.',
 ];
 
 function initResumeCarousels() {
