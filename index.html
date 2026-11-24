@@ -95,7 +95,7 @@
         <div class="hero-actions">
           <a class="btn-glow" href="mailto:suraj.singh.nsut@gmail.com?subject=Hello%20Suraj">Get in touch</a>
           <div class="hero-actions-row">
-            <a class="btn-line" href="https://drive.google.com/file/d/1G6WKD0cSbrpNogEGZIg3DNhLCa7rVP4V/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a class="btn-line" href="https://drive.google.com/file/d/1y6Os_QNjT8Qb3pfMNjmmlT_UOrwUSLlF/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
             <div class="hero-social" role="group" aria-label="Profiles">
               <a class="btn-icon" href="https://github.com/suraj-singh-sde" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
                 <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
@@ -127,6 +127,10 @@
           <div class="strip-item"><span class="strip-icon">🔎</span>Solr · Elastic</div>
           <div class="strip-item"><span class="strip-icon">🗄</span>MySQL · Redis</div>
           <div class="strip-item"><span class="strip-icon">✈</span>Airflow</div>
+          <div class="strip-item"><span class="strip-icon">🔥</span>PyTorch</div>
+          <div class="strip-item"><span class="strip-icon">👥</span>CrewAI</div>
+          <div class="strip-item"><span class="strip-icon">☸</span>Kubernetes</div>
+          <div class="strip-item"><span class="strip-icon">🔌</span>MCP</div>
           <div class="strip-item"><span class="strip-icon">🐍</span>Python</div>
           <div class="strip-item"><span class="strip-icon">⚡</span>FastAPI</div>
           <div class="strip-item"><span class="strip-icon">🔗</span>LangChain</div>
@@ -143,6 +147,10 @@
           <div class="strip-item"><span class="strip-icon">🔎</span>Solr · Elastic</div>
           <div class="strip-item"><span class="strip-icon">🗄</span>MySQL · Redis</div>
           <div class="strip-item"><span class="strip-icon">✈</span>Airflow</div>
+          <div class="strip-item"><span class="strip-icon">🔥</span>PyTorch</div>
+          <div class="strip-item"><span class="strip-icon">👥</span>CrewAI</div>
+          <div class="strip-item"><span class="strip-icon">☸</span>Kubernetes</div>
+          <div class="strip-item"><span class="strip-icon">🔌</span>MCP</div>
         </div>
       </div>
     </div>
@@ -172,48 +180,79 @@
             </div>
             <div class="exp-loc">Gurugram, Haryana, India</div>
             <div class="exp-body">
-              <ul class="exp-bullets">
-                <li>Architected an AI-native no-code platform using LLM-powered agents and tool orchestration to generate production-ready, multi-page web applications from natural language and Figma designs.</li>
-                <li>Built a multi-agent Text-to-Application pipeline: LLM reasoning, schema validation, vector databases, and automated UI orchestration for intent parsing, layout synthesis, component mapping, and workflow generation.</li>
-                <li>Engineered Figma-to-application conversion with Figma APIs, parsing engines, and abstraction layers — unstructured design data → structured app definitions for design-to-deployment automation.</li>
-                <li>Engineered an AI-powered image authenticity detection pipeline to distinguish real from AI-generated images using Fast Fourier Transform (FFT) analysis for frequency-spectrum extraction — surfacing synthetic artifacts and frequency-domain inconsistencies. Layered LLM-based reasoning over spectral patterns for forensic analysis and explainable classification outputs.</li>
-                <li>Building a passport-to-face verification system to validate whether a passport photo and live face match — leveraging AdaFace IR-101 for face embeddings and Buffalo_L (InsightFace) for face detection.</li>
-              </ul>
+              <div class="exp-subsec">
+                <div class="exp-subsec-title">AI Factory: Autonomous Coding Agent Harness</div>
+                <ul class="exp-bullets">
+                  <li>Core developer on AI Factory, an <strong>autonomous agent harness</strong> that converts Slack bug reports, tickets and specs into reviewed, tested pull requests, driven by a declarative loop engine orchestrating planner, coder, reviewer and judge agents in isolated git worktrees.</li>
+                  <li>Scaled the pipeline to <strong>200 concurrent agent runs</strong> through maker–checker parallelism over shared artifacts and per-sub-task coder fan-out, with knowledge-graph memory letting agents reuse lessons from earlier fixes.</li>
+                  <li>Engineered <strong>resilience for unattended execution</strong> with cost caps that pause and resume runs, stall detection that nudges stuck agents, and per-pass checkpointing for recovery across pod restarts.</li>
+                  <li>Gated every run on evidence through an <strong>LLM judge</strong> and review agent, with human sign-off required for pushes and production deploys.</li>
+                </ul>
+              </div>
+              <div class="exp-subsec">
+                <div class="exp-subsec-title">Passport-to-Face Verification</div>
+                <ul class="exp-bullets">
+                  <li>Built an end-to-end <strong>passport-to-selfie face verification</strong> pipeline for KYC: Florence-2 phrase grounding locates the passport, InsightFace (Buffalo_L) detects faces with a 4-way rotation sweep, faces are aligned to the 112×112 template from 5 landmarks, and AdaFace IR-101 512-d embeddings are compared by cosine similarity.</li>
+                  <li>Made tiny passport faces (often <strong>under 100 px in a 12 MP photo</strong>) detectable by locating the passport first, replacing 8× upscaling and multi-crop heuristics; switching from bounding-box crops to 5-point <strong>landmark alignment</strong> then gave the largest accuracy gain in the project.</li>
+                  <li>Restored the production <strong>GPU face-embedding service</strong> after a transformers 5 upgrade caused 504s, then load-tested it with Locust (<strong>p50 2.9 s</strong> at ~1 req/s on one T4 GPU; ~47 s cold start vs ~2.5 s warm) and cut per-request work with 0.25× input downscaling and a 0°-first rotation sweep.</li>
+                </ul>
+              </div>
+              <div class="exp-subsec">
+                <div class="exp-subsec-title">AI-Native No-Code Platform: Design-to-Deployment Agents</div>
+                <ul class="exp-bullets">
+                  <li>Architected an AI-native No-Code platform where an <strong>LLM-powered multi-agent pipeline</strong> generates production-ready web applications from natural-language requirements and Figma designs.</li>
+                  <li>Automated the <strong>design-to-deployment path</strong> end to end: agents read designs through Figma APIs and orchestrate UI assembly, removing the manual hand-off between design and build.</li>
+                  <li>Enforced <strong>schema validation</strong> on every agent output and grounded generation with vector retrieval, so malformed or ungrounded output is rejected before it reaches the build.</li>
+                </ul>
+              </div>
+              <div class="exp-subsec">
+                <div class="exp-subsec-title">Uniform Compliance Detection: Computer Vision API</div>
+                <ul class="exp-bullets">
+                  <li>Designed an <strong>inference microservice</strong> (detect, health and upload endpoints) that checks delivery-staff selfies for uniform compliance using frozen SigLIP 2 features (full image + lower half) and a logistic regression: <strong>97.4% hold-out accuracy</strong>, <strong>ROC-AUC 0.996</strong> on ~2,600 images; beat zero-shot by ~6 points after benchmarking DINOv2 and 8 classifiers.</li>
+                  <li>Added a confidence-based "uncertain" band routing hard cases to human review (<strong>99.5% of firm answers correct</strong>, ~92% get a firm answer), plus a data pipeline with MD5 de-duplication, label-conflict checks and employee-level fold splits.</li>
+                  <li>Cut <strong>p95 latency ~3×</strong> (64 to 22 ms on GPU) and raised throughput 2.6× (101 img/s); load-tested and sized production for <strong>90K images/day on CPU pods</strong>, no GPU.</li>
+                </ul>
+              </div>
+              <div class="exp-subsec">
+                <div class="exp-subsec-title">AI-Generated Image Authenticity Detection</div>
+                <ul class="exp-bullets">
+                  <li>Engineered an <strong>image-authenticity pipeline</strong> that separates real from AI-generated images using Fast Fourier Transform (FFT) frequency-spectrum analysis.</li>
+                  <li>Surfaced synthetic artifacts and <strong>frequency-domain inconsistencies</strong> that pixel-level inspection misses.</li>
+                  <li>Integrated LLM-based reasoning over spectral patterns to return an <strong>explainable forensic verdict</strong> for automated image verification.</li>
+                </ul>
+              </div>
             </div>
           </article>
           <article class="exp-card">
             <div class="exp-head">
               <div>
-                <div class="exp-co">Attentions AI</div>
-                <div class="exp-role">Software Developer</div>
+                <div class="exp-co">Attentions Data Labs</div>
+                <div class="exp-role">Software Development Engineer</div>
               </div>
               <div class="exp-when">Aug 2024 – Nov 2025 · 1 yr 4 mos</div>
             </div>
             <div class="exp-loc">Pune, Maharashtra, India</div>
             <div class="exp-body">
               <div class="exp-subsec">
-                <div class="exp-subsec-title">AI Agents &amp; Automation</div>
+                <div class="exp-subsec-title">Autonomous Agents: Invoice Processing &amp; Jira Orchestration</div>
                 <ul class="exp-bullets">
-                  <li>Pioneered an autonomous Invoice Processing Agent with OCR, data extraction, normalization, and anomaly detection — reducing manual errors by 85% and improving efficiency.</li>
-                  <li>Built an autonomous Jira Orchestration Agent using agentic workflow automation to manage and execute complex operations, increasing process speed and efficiency by 70%.</li>
-                  <li>Architected a suite of AI-powered autonomous agents using CrewAI and LLM-based frameworks — advanced prompt chaining, context-aware reasoning, and dynamic API orchestration for end-to-end business process automation and scalability.</li>
+                  <li>Built autonomous Invoice Processing and Jira orchestration agents, reducing invoice errors by <strong>85%</strong> and increasing workflow efficiency and execution speed by <strong>70%</strong>.</li>
+                  <li>Architected the agent suite on <strong>CrewAI</strong> with prompt chaining, context-aware reasoning and dynamic API orchestration for end-to-end process automation.</li>
                 </ul>
               </div>
               <div class="exp-subsec">
-                <div class="exp-subsec-title">Enterprise Document Search &amp; RAG</div>
+                <div class="exp-subsec-title">Enterprise-grade Document Search &amp; Answering (RAG)</div>
                 <ul class="exp-bullets">
-                  <li>Engineered a robust data ingestion pipeline leveraging VisionLM, PyMuPDF, OCR, and LLM-based extraction, integrating outputs into Solr and Milvus for knowledge management.</li>
-                  <li>Improved retrieval relevance by 55% using query expansion, semantic chunking, and hybrid (dense + sparse) search with LLM re-ranking.</li>
-                  <li>Designed an LLM-driven query routing system to differentiate conversational and RAG contexts, enhancing accuracy and reducing response latency by 70%.</li>
+                  <li>Engineered an ingestion pipeline using VisionLM, PyMuPDF, OCR and LLM-based feature extraction, loading data into Solr and Milvus.</li>
+                  <li>Improved vector retrieval by <strong>55%</strong> via query expansion, semantic chunking and hybrid search with LLM re-ranking; built an LLM-based query router that cut contextual response time by over <strong>75%</strong>.</li>
                 </ul>
               </div>
               <div class="exp-subsec">
-                <div class="exp-subsec-title">Backend &amp; Microservices</div>
+                <div class="exp-subsec-title">Backend Services: Notification, Auth &amp; File</div>
                 <ul class="exp-bullets">
-                  <li><strong>Notifications:</strong> Real-time service on Redis Streams + MySQL supporting concurrent clients, retries, and offline delivery for high reliability.</li>
-                  <li><strong>Auth:</strong> Secure JWT-based Auth Service with Google, Outlook, and LDAP via OAuth 2.0 / OpenID Connect — refresh tokens, RBAC, and session handling.</li>
-                  <li><strong>Files:</strong> Scalable File Service on AWS S3 + MySQL for secure uploads/downloads with pre-signed URLs, lifecycle policies, and encryption.</li>
-                  <li>Deployed microservices, Airflow jobs, and APIs within a Dockerized architecture for scalability, maintainability, and deployment efficiency.</li>
+                  <li><strong>Notification Service:</strong> Real-time delivery on Redis Streams with MySQL persistence, retries and offline delivery.</li>
+                  <li><strong>Auth Service:</strong> JWT-based authentication and authorization with Google, Outlook and LDAP integrations over OAuth 2.0 / OpenID Connect, with RBAC.</li>
+                  <li><strong>File Service:</strong> Scalable file management on AWS S3 with MySQL metadata, secure uploads via pre-signed URLs; services shipped as Docker microservices and Airflow jobs.</li>
                 </ul>
               </div>
             </div>
@@ -306,12 +345,19 @@
       </div>
     </div>
     <div class="proj-grid" id="pgrid">
+      <div class="pcard featured" data-c="ai">
+        <div class="pbadge pb-tool">★ Featured · Open source</div>
+        <div class="pname"><a href="https://github.com/suraj-singh-sde/ai-craftman" target="_blank" rel="noopener noreferrer" style="color:inherit">AI-Craftman: AI-SDLC plugin for Claude Code</a></div>
+        <div class="pdesc">Open-source AI-SDLC plugin for Claude Code that takes one requirement through six stages (requirements, design, parallel TDD builds, QA, DevOps) using 25 specialist agents; ported to OpenAI Codex. Governance is enforced in code, not prompts: a state machine and tool-call hooks block stage transitions, pushes and deploys without human approval or a passing test run, backed by hidden acceptance tests and an end-to-end verifier.</div>
+        <div class="ptags"><span class="ptag">Claude Code</span><span class="ptag">Multi-agent</span><span class="ptag">TDD</span><span class="ptag">Hooks</span><span class="ptag">OpenAI Codex</span></div>
+        <div class="pfoot"><div class="pdots"><div class="pdot" style="background:var(--a1)"></div><div class="pdot" style="background:var(--a1)"></div><div class="pdot" style="background:var(--a1)"></div><div class="pdot" style="background:var(--a1)"></div><div class="pdot" style="background:var(--a1)"></div></div><span class="pstatus">Sep 2026 – Nov 2026</span><span class="parr">↗</span></div>
+      </div>
       <div class="pcard featured" data-c="research">
-        <div class="pbadge pb-mob">★ Featured · NSUT</div>
-        <div class="pname">Dense human pose estimation &amp; person perception from WiFi</div>
-        <div class="pdesc">Exploratory semester project on human pose estimation using DINOv2, DensePose RCNN, GDL, and WiFi signal modeling. Explored GANs for converting CSI to images and Vision Transformers as alternatives to conventional RCNN architectures for enhanced pose accuracy.</div>
-        <div class="ptags"><span class="ptag">DINOv2</span><span class="ptag">DensePose RCNN</span><span class="ptag">GAN</span><span class="ptag">ViT</span></div>
-        <div class="pfoot"><div class="pdots"><div class="pdot" style="background:var(--a2)"></div><div class="pdot" style="background:var(--a2)"></div><div class="pdot" style="background:var(--a2)"></div><div class="pdot" style="background:var(--a2)"></div><div class="pdot" style="background:var(--c4)"></div></div><span class="pstatus">Oct 2023 – Dec 2023</span><span class="parr">↗</span></div>
+        <div class="pbadge pb-mob">Research · NSUT</div>
+        <div class="pname">Dense pose estimation from WiFi: person perception from CSI signals</div>
+        <div class="pdesc">Researched dense human pose estimation from WiFi signals: modelled Channel State Information (CSI) and mapped it to body-surface pose using DensePose R-CNN, DINOv2 features and Geometric Deep Learning (GDL). Applied GANs for CSI-to-image translation and evaluated Vision Transformers (ViTs) against R-CNN baselines to improve pose accuracy.</div>
+        <div class="ptags"><span class="ptag">DINOv2</span><span class="ptag">DensePose R-CNN</span><span class="ptag">GDL</span><span class="ptag">GAN</span><span class="ptag">ViT</span></div>
+        <div class="pfoot"><div class="pdots"><div class="pdot" style="background:var(--a2)"></div><div class="pdot" style="background:var(--a2)"></div><div class="pdot" style="background:var(--a2)"></div><div class="pdot" style="background:var(--a2)"></div><div class="pdot" style="background:var(--c4)"></div></div><span class="pstatus">Dec 2023 – Jan 2024</span><span class="parr">↗</span></div>
       </div>
       <div class="pcard" data-c="ai">
         <div class="pbadge pb-ai">RAG · NSUT</div>
